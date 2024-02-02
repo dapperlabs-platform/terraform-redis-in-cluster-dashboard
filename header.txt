@@ -1,0 +1,25 @@
+# Redis In Cluster Grafana Dashboard
+
+A Grafana Dashboard for our In-Cluster Redis nodes for non-production environments.
+
+`make` updates the `README.md` file based on Terraform changes.
+
+## Requires
+
+1. `terraform` [Download](https://www.terraform.io/downloads.html) [Brew](https://formulae.brew.sh/formula/terraform)
+2. `terraform-docs` to update the README. [Download](https://github.com/terraform-docs/terraform-docs) [Brew](https://formulae.brew.sh/formula/terraform-docs)
+3. `make` to update the README. [Download](https://www.gnu.org/software/make/)
+
+## Usage
+
+```terraform
+module "redis_in_cluster_grafana_dashboard" {
+  source               = "github.com/dapperlabs-platform/terraform-redis-in-cluster-dashboard?ref=main"
+  folder_id            = "folder-id-goes-here"
+  prom_datasource_uid  = "datasource-id-goes-here"
+  product_name         = "Product That Is Awesome"
+  project_name         = "product-staging"
+  environment          = "staging"
+  service_name         = "product-infrastructure"
+}
+```

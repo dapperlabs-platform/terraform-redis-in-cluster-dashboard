@@ -1,0 +1,8 @@
+export GRAFANA_AUTH=""
+export GRAFANA_URL=""
+export TF_VAR_folder_uid=""
+export TF_VAR_prom_datasource_uid=""
+export TF_VAR_environment=""
+export TF_VAR_project_name=""
+export TF_VAR_product_name=""
+export TF_VAR_service_name=""
